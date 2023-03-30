@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب الالتحاق</title>
+
+</head>
+
+<body style="direction: rtl;">
+    <img id="top" src="images/LOGO-WWB.png" alt="" width="300px">
+    <br>
+    <a href="index.html">الصفحة الرئيسية</a>
+    <a href="deanships.html"> العمادات</a>
+    <a href="contactus.html">اتصل بنا </a>
+    <a href="registeration.html"> طلب الالتحاق </a>
+    <a href="news.html"> أخبار الجامعة  </a>
+    <a href="statistics.html">  احصائيات </a>
+
+
+    <br><br>
+
+    <form action="http://localhost:3000/students" method="get" id="myForm">
+
+        <label for="">الاسم:</label>
+        <input name="userName" type="text">
+        <label for="">رقم الهوية:</label>
+        <input name="idNo" type="number">
+        <label style="color: red;" for="">تاريخ الميلاد:</label>
+        <input name="bod" type="date">
+        <br>
+        <label for="">العنوان:</label>
+        <input name="address" type="text">
+        <label for="">رقم الهاتف:</label>
+        <input name="phone" type="tel">
+        <br>
+        <label for="">الجنس:</label>
+        <input type="radio" value="ذكر" name="gender">
+        <label for="">ذكر</label>
+        <input type="radio" value="انثى" name="gender">
+        <label for="">انثى</label>
+        <br>
+        <label for="">معدل الثانوية العامة:</label>
+        <input name="secGpa" type="number">
+        <label for="">سنة الحصول عليها :</label>
+        <input name="secYear" type="number">
+        <label for="">تخصص الثانوية العامة :</label>
+        <select name="secMajor">
+            <option value="faculty">علوم</option>
+            <option value="option2">آداب</option>
+            <option value="option3">شرعي</option>
+            <option value="option3">صناعي</option>
+        </select>
+        <br>
+        <label for="faculty">الكلية:</label>
+        <select id="faculty" name="faculty">
+            <option value="faculty1">الهندسة والنظم الذكية</option>
+            <option value="faculty2">تكنولوجيا المعلومات</option>
+            <option value="faculty3">التمريض وعلوم الصحة</option>
+            <option value="faculty4">ادارة المال والاعمال</option>
+            <option value="faculty5">العلوم الانسانية والاعلام</option>
+            <option value="faculty6">الدبلوم المهني والتعليم المستمر</option>
+        </select>
+
+        <br>
+        اللغات:
+        <input type="checkbox" name="languages" value="ar">اللغة العربية:
+        <input type="checkbox" name="languages" value="en">اللغة الانجليزية:
+        <input type="checkbox" name="languages" value="fr">اللغة الفرنسية:
+        <br>
+        <input name="" type="submit" value="حفظ وارسال">
+    </form>
+</body>
+
+</html>
